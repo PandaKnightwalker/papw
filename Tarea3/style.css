@@ -1,0 +1,36 @@
+body{
+    background-color: papayawhip;
+  }
+
+  #titulo1{
+    font-style: italic; 
+    text-align: center;
+    color:darkred;
+  }
+
+#titleb,#title2{
+    text-align: left;
+    color:darkred;
+ font-weight: bold;
+}
+
+  #datos{
+    float: right;
+    border-color:black;
+    border-width:1px;
+    border-style: solid;
+  
+  }
+  pre{
+    text-align: justify;
+  }
+
+  strong,li{
+    color:darkred;
+  }
+
+  tr,td{    
+    border-color:black;
+   border-width: 1px;
+    border-style: solid;
+  }

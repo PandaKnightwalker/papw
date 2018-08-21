@@ -1,11 +1,9 @@
-body{
-    background-color: papayawhip;
-  }
 
   #titulo1{
     font-style: italic; 
     text-align: center;
-    color:darkred;
+    color:black;
+ 
   }
 
 #titleb,#title2{
@@ -16,11 +14,16 @@ body{
 
   #datos{
     float: right;
+    text-align: center;
     border-color:black;
     border-width:1px;
     border-style: solid;
   
   }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2
+}
   pre{
     text-align: justify;
   }
@@ -29,8 +32,6 @@ body{
     color:darkred;
   }
 
-  tr,td{    
-    border-color:black;
-   border-width: 1px;
-    border-style: solid;
+  #titleb{
+    text-align: center;
   }

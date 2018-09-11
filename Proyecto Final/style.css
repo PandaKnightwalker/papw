@@ -1,8 +1,32 @@
 * {box-sizing: border-box}
 body{
-    background: gainsboro;
+  background-image: url("http://demo.geekslabs.com/materialize/v2.3/layout03/images/user-profile-bg.jpg");
+  background-size: cover;
 }
-/* Full-width input fields */
+
+.navbar-default {
+  background-color: rgba(255,255,255,0.2);
+  border-color: transparent;
+}
+.navbar-default .navbar-nav>li>a{
+  color: black;
+}
+.navbar-default .navbar-brand{
+  color:black;
+}
+.navbar-default .navbar-brand:hover{
+  color:white;
+}
+.navbar-default .navbar-nav>li>a:hover{
+  color: white;
+  background: rgba(255, 255, 255, 0.11);
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color:white;
+  background: rgba(255,255,255,0.3);
+}
 
 input[type=email]{
     width: 100%;
@@ -33,31 +57,50 @@ hr {
 
 /* Set a style for all buttons */
 button {
-  background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
+  border:none;
+ border-radius:60px;
+   cursor: pointer;
+   width: 49%;
+  opacity: 1;
 }
 
 button:hover {
   opacity:1;
 }
+.signupbtn{
+  background-color: rgb(6, 168, 0);
+  float:left;
 
+}
+.btn-default{
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border:none;
+ border-radius:60px;
+   cursor: pointer;
+   width: 49%;
+  opacity: 1;
+  background-color: rgb(36, 36, 36);
+  float:left;
+
+}
+.btn-default:hover{
+  background:gray;
+  color:white;
+}
 /* Extra styles for the cancel button */
 .cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
+  background-color:red;
+  float: right;
+
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
+
 
 /* Add padding to container elements */
 .container {
@@ -78,8 +121,14 @@ button:hover {
   }
 }
 
-.col-sm-4{
+#login{
     float: none;
     margin: 0 auto;
-    background: #ffffff;
+    background-color:rgba(255,255,255,0.2);
+    
+  
 }
+
+/*h1,p{
+  color:white;
+}*/

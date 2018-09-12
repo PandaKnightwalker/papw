@@ -1,103 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Contact V11</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Mis productos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/util.css">
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    .navbar-fixed-top {
+  background: rgba(200,200,200,0.5);
+  border-color: transparent;
+}
+.navbar-fixed-top .navbar-nav>li>a{
+  color: black;
+}
+.navbar-fixed-top .navbar-brand{
+  color:black;
+}
+.navbar-fixed-top .navbar-brand:hover{
+  color:white;
+}
+.navbar-fixed-top .navbar-nav>li>a:hover{
+  color: white;
+  background: rgba(255, 255, 255, 0.5);
+}
+.navbar-fixed-top .navbar-nav > .active > a,
+.navbar-fixed-top .navbar-nav > .active > a:hover,
+.navbar-fixed-top .navbar-nav > .active > a:focus {
+  color:white;
+  background: rgba(255,255,255,0.5);
+}
+
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
 </head>
-<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
-		  <div class="navbar-header">
-			  <a class="navbar-brand" href="shop.html">  <i class="tiny material-icons">cloud</i> ProyectPapw</a>
-			</div>
-		  <ul class="nav navbar-nav">
-			<li><a href="shop.html">inicio</a></li>
-			<li class="active"><a href="send.html">vender</a></li>
-			<li><a href="">carrito</a></li>
-		  </ul>
-		<!--  <ul class="nav navbar-nav navbar-right">
-			  <li><a href="#">Contacto</a></li>
-			</ul>-->
-		</div>
-	  </nav>
 <body>
 
+<div class="jumbotron" style="background-image: url(http://demo.geekslabs.com/materialize/v2.3/layout03/images/user-profile-bg.jpg);">
+  <div class="container text-center">
+    <h1 style="color:white;">Mis productos</h1>   
+    <a href="sell.html" class="btn btn-default" >Nuevo</a>   
+  </div>
+</div>
 
-	<div class="container-contact100" style="background-image: url('images/bg-01.jpg');">
-		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
-				<span class="contact100-form-title">
-					Poner a la venta
-				</span>
+<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="index.html">  <i class="tiny material-icons">cloud</i> ProyectPapw</a>
+            </div>
+          <ul class="nav navbar-nav">
+            <li><a href="shop.html">inicio</a></li>
+                  <li  class="active"><a href="send.html">vender</a></li>
+                  <li><a href="carrito.html">carrito</a></li>
+          </ul>
+        <!--  <ul class="nav navbar-nav navbar-right">
+              <li><a href="product.html">Contacto</a></li>
+            </ul>-->
+        </div>
+      </nav>
 
-				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100">Tell us your name *</span>
-					<input class="input100" type="text" name="name" placeholder="Enter your name">
-				</div>
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading"><a href="myproduct.html">producto</a></div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading"><a href="myproduct.html">producto</a></div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading"><a href="myproduct.html">producto</a></div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+      </div>
+    </div>
+  </div>
+</div><br>
 
-				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<span class="label-input100">Enter your email *</span>
-					<input class="input100" type="text" name="email" placeholder="Enter your email">
-				</div>
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading"><a href="myproduct.html">producto</a></div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading"><a href="myproduct.html">producto</a></div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading"><a href="myproduct.html">producto</a></div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
 
-				<div class="wrap-input100">
-					<span class="label-input100">Your Website</span>
-					<input class="input100" type="text" name="web" placeholder="http://">
-				</div>
-
-				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<span class="label-input100">Message</span>
-					<textarea class="input100" name="message" placeholder="Your message here..."></textarea>
-				</div>
-
-				<div class="container-contact100-form-btn">
-					<div class="wrap-contact100-form-btn">
-						<div class="contact100-form-bgbtn"></div>
-						<button class="contact100-form-btn">
-							Submit
-						</button>
-					</div>
-				</div>
-			</form>
-		</div>
-
-		
-	</div>
-	<div class="footer-copyright text-center py-3" style="background-color: white">© 2018 
-			<a href="https://github.com/PandaKnightwalker/papw/"> David Castillo</a>
-	 </div>
-
-
-
-	<div id="dropDownSelect1"></div>
-
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="vendor/select2/select2.min.js"></script>
-	<script src="js/main.js"></script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-23581568-13');
-</script>
+<footer class="container-fluid text-center">
+        <a href="https://github.com/PandaKnightwalker/papw/"> David Castillo</a>
+</footer>
 
 </body>
 </html>

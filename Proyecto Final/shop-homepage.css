@@ -1,0 +1,38 @@
+
+
+body {
+  padding-top: 54px;
+  background-color: white;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+
+.navbar-fixed-top {
+  background: rgba(200,200,200,0.5);
+  border-color: transparent;
+}
+.navbar-fixed-top .navbar-nav>li>a{
+  color: black;
+}
+.navbar-fixed-top .navbar-brand{
+  color:black;
+}
+.navbar-fixed-top .navbar-brand:hover{
+  color:white;
+}
+.navbar-fixed-top .navbar-nav>li>a:hover{
+  color: white;
+  background: rgba(255, 255, 255, 0.5);
+}
+.navbar-fixed-top .navbar-nav > .active > a,
+.navbar-fixed-top .navbar-nav > .active > a:hover,
+.navbar-fixed-top .navbar-nav > .active > a:focus {
+  color:white;
+  background: rgba(255,255,255,0.5);
+}
